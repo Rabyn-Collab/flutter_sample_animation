@@ -27,12 +27,12 @@ class _HomePageState extends State<HomePage> {
             InkWell(
                 onTap: (){
                   setState(() {
-                    isChange = !isChange;
+                    isChanges = !isChanges;
                   });
                 },
                 child: AnimatedCrossFade(
                   duration: Duration(seconds: 1),
-                  crossFadeState: isChange? CrossFadeState.showFirst : CrossFadeState.showSecond,
+                  crossFadeState: isChanges? CrossFadeState.showFirst : CrossFadeState.showSecond,
                   secondChild: Container(
                     height: 300,
                     width: 300,
